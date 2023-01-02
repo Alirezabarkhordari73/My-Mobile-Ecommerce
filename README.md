@@ -4,6 +4,10 @@
 
   <img src="./Mobile-Shop-Preview.png">
 </p>
+<p align="center">
+
+  <img src="./Mobile-Shop-Preview2.png">
+</p>
 
 ## Basic Overview - [Live Demo](https://react-shopping-cart-67954.firebaseapp.com/)
 

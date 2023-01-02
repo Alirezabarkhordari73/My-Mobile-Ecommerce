@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { GetServerSideProps } from "next";
+import { GetServerSideProps, GetStaticProps } from "next";
 import { Tab } from "@headlessui/react";
 
 import { Header, Banner, Products, Footer, Cart } from "../components";
@@ -62,7 +62,7 @@ const index = ({ categories, products }: Props) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const categories = await fetchCategories();
   const products = await fetchProducts();
   return {
