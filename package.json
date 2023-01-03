@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.7",
+    "@netlify/plugin-nextjs": "^4.29.4",
     "@portabletext/react": "^2.0.0",
     "@reduxjs/toolkit": "^1.9.1",
     "@sanity/image-url": "^1.0.1",

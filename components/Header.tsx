@@ -13,14 +13,13 @@ type Props = {};
 
 const Header = (props: Props) => {
   const { isCartOpen, setIsCartOpen } = useStateCartContext();
-  console.log("Header", isCartOpen);
 
   const [menuBtnClick, setMenuBtnClick] = useState(false);
   const [reachBreakPoint, setReachBreakPoint] = useState(false);
 
   const totalQty = useAppSelector((state) => state.cart.totalQuantity);
 
-  const { width, height } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   useEffect(() => {
     if (width >= 1024) {
